@@ -13,14 +13,16 @@ import Button from './components/Button.vue'
     :ease="20"
   />
 
-  <div class="font-mono text-white antialiased grid grid-cols-1 items-center bg-black min-h-screen">
+  <div
+    class="font-mono text-white antialiased grid grid-cols-1 items-center bg-black min-h-screen pb-12"
+  >
     <div class="flex flex-col items-center justify-center max-w-screen-lg m-auto animate-fadein">
-      <div class="py-10">
+      <div class="py-10 lg:mb-20">
         <GithubProfileImage username="ibhayb" />
       </div>
 
       <!-- Text -->
-      <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+      <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-2 lg:mb-20">
         <div class="text-center md:text-left font-extrabold text-3xl md:text-4xl">
           <div class="">Hello World 👋🏽🌎</div>
           <div
