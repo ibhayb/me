@@ -1,6 +1,12 @@
 <template>
   <div class="relative flex justify-center items-center">
-    <div class="flex w-[200px] h-[200px] justify-center items-center relative">
+    <div
+      class="flex justify-center items-center relative"
+      :class="{
+        'w-[130px] h-[130px]': smallScreen,
+        'w-[200px] h-[200px]': !smallScreen
+      }"
+    >
       <div
         class="w-[110%] h-[110%] shadow-lg shadow-pink-500 bg-transparent rounded-full absolute animate-spin_right"
       ></div>
@@ -9,7 +15,11 @@
           v-if="profileImageUrl"
           :src="profileImageUrl"
           alt="GitHub Profile - Conic Gradient"
-          class="rounded-full w-[110%] h-[110%]"
+          class="rounded-full"
+          :class="{
+            'w-[100%] h-[100%]': smallScreen,
+            'w-[110%] h-[110%]': !smallScreen
+          }"
         />
         <p v-else class="text-gray-500">Loading...</p>
       </div>
@@ -36,11 +46,17 @@ export default defineComponent({
   },
   data() {
     return {
-      profileImageUrl: '' as string
+      profileImageUrl: '' as string,
+      smallScreen: false
     }
   },
   mounted() {
     this.fetchGitHubProfileImage()
+    this.checkScreenSize()
+    window.addEventListener('resize', this.checkScreenSize)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.checkScreenSize)
   },
   methods: {
     async fetchGitHubProfileImage(): Promise<void> {
@@ -51,6 +67,9 @@ export default defineComponent({
       } catch (error) {
         console.error('Error fetching GitHub profile image:', error)
       }
+    },
+    checkScreenSize() {
+      this.smallScreen = window.innerWidth < 640 // Adjust the breakpoint as needed
     }
   }
 })

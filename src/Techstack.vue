@@ -4,16 +4,16 @@ import Button from './components/Button.vue'
 
 <template>
   <div
-    class="gap-10 font-mono text-white antialiased grid grid-cols-1 items-center justify-center min-h-screen w-full max-w-7xl mx-auto px-4 animate-fadein"
+    class="gap-10 font-mono text-white antialiased grid grid-cols-1 items-center justify-center min-h-screen w-full max-w-7xl mx-auto px-4 py-12 animate-fadein"
   >
-    <div class="text-4xl lg:text-5xl text-center w-full font-bold mt-6">My Technologies 🚀🧑🏼‍💻</div>
+    <div class="text-3xl lg:text-5xl text-left w-full font-bold">My Technologies 🚀🧑🏼‍💻</div>
     <div class="relative text-center">
       <!-- Tech Icons Div -->
-      <div class="grid grid-cols-1 py-24 gap-8 lg:gap-16 text-xl">
+      <div class="grid grid-cols-1 py-12 gap-8 lg:gap-16 text-xl mb-24">
         <div class="">
           <h1 class="mb-6 text-left">Programming Languages</h1>
           <div
-            class="flex items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
+            class="flex flex-wrap items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
           >
             <img
               class="transform hover:scale-125 ease-in-out transition duration-200"
@@ -51,7 +51,7 @@ import Button from './components/Button.vue'
         <div class="">
           <h1 class="mb-6 text-left">Frameworks</h1>
           <div
-            class="flex items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
+            class="flex flex-wrap items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
           >
             <img
               class="transform hover:scale-125 ease-in-out transition duration-200"
@@ -73,7 +73,7 @@ import Button from './components/Button.vue'
         <div class="">
           <h1 class="mb-6 text-left">Databases</h1>
           <div
-            class="flex items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
+            class="flex flex-wrap items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
           >
             <img
               class="transform hover:scale-125 ease-in-out transition duration-200"
@@ -90,7 +90,7 @@ import Button from './components/Button.vue'
         <div class="">
           <h1 class="mb-6 text-left">Other</h1>
           <div
-            class="flex items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
+            class="flex flex-wrap items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
           >
             <img
               class="transform hover:scale-125 ease-in-out transition duration-200"
