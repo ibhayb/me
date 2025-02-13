@@ -68,6 +68,11 @@ import Button from './components/Button.vue'
               src="https://img.shields.io/badge/Laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white"
               alt="Laravel"
             />
+            <img
+              class="transform hover:scale-125 ease-in-out transition duration-200"
+              src="https://img.shields.io/badge/Jekyll-C00?style=for-the-badge&logo=jekyll&logoColor=fff"
+              alt="Jekyll"
+            />
           </div>
         </div>
         <div class="">
@@ -94,6 +99,11 @@ import Button from './components/Button.vue'
           >
             <img
               class="transform hover:scale-125 ease-in-out transition duration-200"
+              src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=000"
+              alt="Linux"
+            />
+            <img
+              class="transform hover:scale-125 ease-in-out transition duration-200"
               src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi"
               alt="RaspberryPi"
             />
@@ -107,6 +117,12 @@ import Button from './components/Button.vue'
               src="https://img.shields.io/badge/Homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=fff"
               alt="Homebrew"
             />
+          </div>
+          <div class="pt-10 text-xs">
+            Badges by
+            <a href="https://shields.io/" target="_blank" rel="noopener noreferrer">
+              <u>shields.io</u></a
+            >
           </div>
         </div>
       </div>
