@@ -36,6 +36,7 @@ pnpm lint
 
 ```sh
 pnpm build
+# push build to main 
 ```
 
 ### Deploy to Github Pages
