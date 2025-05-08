@@ -10,7 +10,8 @@ export default {
         spin_right_fast: 'spin_right 2s linear infinite',
         spin_left: 'spin_left 3s linear infinite',
         fadein: 'fadeIn 0.5s ease-in-out',
-        'text-slide-3': 'text-slide-3 7.5s cubic-bezier(0.83, 0, 0.17, 1) infinite'
+        'text-slide-3': 'text-slide-3 7.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        rotate: 'rotate 10s linear infinite'
       },
       keyframes: {
         // {...}
@@ -27,6 +28,10 @@ export default {
           '0%': { transform: 'rotate(0deg)' },
           '50%': { transform: 'rotate(-180deg)' },
           '100%': { transform: 'rotate(-360deg)' }
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg) scale(10)' },
+          '100%': { transform: 'rotate(-360deg) scale(10)' }
         },
         'text-slide-3': {
           '0%, 26.66%': {
