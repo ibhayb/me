@@ -2,6 +2,7 @@
 import Particles from './components/Particles.vue'
 import GithubProfileImage from './components/GithubProfileImage.vue'
 import Techstack from './Techstack.vue'
+import Projects from './Projects.vue'
 import Button from './components/Button.vue'
 </script>
 
@@ -48,8 +49,14 @@ import Button from './components/Button.vue'
     </div>
   </div>
 
+  <!-- Techstack  -->
   <div class="bg-black border-t border-gray-600" id="techstack">
     <Techstack />
+  </div>
+
+  <!-- Projects -->
+  <div class="bg-black border-t border-gray-600" id="projects">
+    <Projects />
   </div>
 
   <footer
