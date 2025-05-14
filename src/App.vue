@@ -17,13 +17,13 @@ import Button from './components/Button.vue'
   <div
     class="font-mono text-white antialiased grid grid-cols-1 items-center bg-black min-h-screen pb-12"
   >
-    <div class="flex flex-col items-center justify-center max-w-screen-lg m-auto animate-fadein">
-      <div class="py-10 lg:mb-20">
+    <div class="flex flex-col items-center justify-center max-w-screen-lg m-auto">
+      <div class="py-10 lg:mb-20" v-motion-slide-visible-left>
         <GithubProfileImage username="ibhayb" />
       </div>
 
       <!-- Text -->
-      <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-2 lg:mb-20">
+      <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-2 lg:mb-20" v-motion-slide-visible-right>
         <div class="text-center md:text-left font-extrabold text-3xl md:text-4xl">
           <div class="">Hello World 👋🏽🌎</div>
           <div
@@ -45,7 +45,7 @@ import Button from './components/Button.vue'
         </div>
       </div>
       <!-- Show Techstack button -->
-      <Button ahref="#techstack" button-text="My Techstack 👀" />
+      <Button ahref="#techstack" button-text="My Techstack 👀" v-motion-slide-visible-bottom />
     </div>
   </div>
 

@@ -4,16 +4,19 @@ import Button from './components/Button.vue'
 
 <template>
   <div
-    class="gap-10 font-mono text-white antialiased grid grid-cols-1 items-center justify-center min-h-screen w-full max-w-7xl mx-auto px-4 py-12 animate-fadein"
+    class="gap-10 font-mono text-white antialiased grid grid-cols-1 items-center justify-center min-h-screen w-full max-w-7xl mx-auto px-4 py-12"
   >
-    <div class="text-3xl lg:text-5xl text-left w-full font-bold">My Technologies 🚀🧑🏼‍💻</div>
+    <div class="text-3xl lg:text-5xl text-left w-full font-bold" v-motion-slide-visible-right>
+      My Technologies 🚀🧑🏼‍💻
+    </div>
     <div class="relative text-center">
       <!-- Tech Icons Div -->
       <div class="grid grid-cols-1 py-12 gap-8 lg:gap-16 text-xl mb-24">
         <div class="">
-          <h1 class="mb-6 text-left">Programming Languages</h1>
+          <h1 class="mb-6 text-left" v-motion-slide-visible-left>Programming Languages</h1>
           <div
             class="flex flex-wrap items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
+            v-motion-pop-visible
           >
             <img
               class="transform hover:scale-125 ease-in-out transition duration-200"
@@ -49,9 +52,10 @@ import Button from './components/Button.vue'
         </div>
 
         <div class="">
-          <h1 class="mb-6 text-left">Frameworks</h1>
+          <h1 class="mb-6 text-left" v-motion-slide-visible-left>Frameworks</h1>
           <div
             class="flex flex-wrap items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
+            v-motion-pop-visible
           >
             <img
               class="transform hover:scale-125 ease-in-out transition duration-200"
@@ -76,9 +80,10 @@ import Button from './components/Button.vue'
           </div>
         </div>
         <div class="">
-          <h1 class="mb-6 text-left">Databases</h1>
+          <h1 class="mb-6 text-left" v-motion-slide-visible-left>Databases</h1>
           <div
             class="flex flex-wrap items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
+            v-motion-pop-visible
           >
             <img
               class="transform hover:scale-125 ease-in-out transition duration-200"
@@ -93,9 +98,10 @@ import Button from './components/Button.vue'
           </div>
         </div>
         <div class="">
-          <h1 class="mb-6 text-left">Other</h1>
+          <h1 class="mb-6 text-left" v-motion-slide-visible-left>Other</h1>
           <div
             class="flex flex-wrap items-center gap-6 rounded-xl px-6 bg-[radial-gradient(40%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)]"
+            v-motion-pop-visible
           >
             <img
               class="transform hover:scale-125 ease-in-out transition duration-200"
@@ -118,7 +124,7 @@ import Button from './components/Button.vue'
               alt="Homebrew"
             />
           </div>
-          <div class="pt-10 text-xs">
+          <div class="pt-10 text-xs" v-motion-slide-visible-bottom>
             Badges by
             <a href="https://shields.io/" target="_blank" rel="noopener noreferrer">
               <u>shields.io</u></a
