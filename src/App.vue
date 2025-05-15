@@ -60,7 +60,7 @@ import Button from './components/Button.vue'
   </div>
 
   <footer
-    class="fixed bottom-0 left-0 z-20 w-full p-4 bg-black border-t border-gray-600 shadow md:flex md:items-center md:justify-between md:p-6"
+    class="bottom-0 left-0 z-20 w-full p-4 bg-black border-t border-gray-600 shadow md:flex md:items-center md:justify-between md:p-6"
   >
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
       <a class="hover:text-indigo-600" target="_blank" rel="noopener noreferrer">
