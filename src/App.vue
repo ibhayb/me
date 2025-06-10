@@ -14,51 +14,55 @@ import Button from './components/Button.vue'
     :ease="20"
   />
 
-  <div
-    class="font-mono text-white antialiased grid grid-cols-1 items-center bg-black min-h-screen pb-12"
-  >
-    <div class="flex flex-col items-center justify-center max-w-screen-lg m-auto">
-      <div class="py-10 lg:mb-20" v-motion-slide-visible-left>
-        <GithubProfileImage username="ibhayb" />
-      </div>
-
-      <!-- Text -->
-      <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-2 lg:mb-20" v-motion-slide-visible-right>
-        <div class="text-center md:text-left font-extrabold text-3xl md:text-4xl">
-          <div class="">Hello World 👋🏽🌎</div>
-          <div
-            class="[text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200"
-          >
-            I'm Ibrahim Hayber, a passionate
-            <span
-              class="text-indigo-500 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden"
-            >
-              <ul class="block animate-text-slide-3 text-left leading-tight [&_li]:block">
-                <li>Developer</li>
-                <li>Student</li>
-                <li>Learner</li>
-                <li aria-hidden="true">Developer</li>
-              </ul>
-            </span>
-          </div>
-          with an insatiable love for programming and lifelong learning.
+  <div class="overflow-hidden">
+    <div
+      class="font-mono text-white antialiased grid grid-cols-1 items-center bg-black min-h-screen pb-12"
+    >
+      <div class="flex flex-col items-center justify-center max-w-screen-lg m-auto">
+        <div class="py-10 lg:mb-20" v-motion-slide-visible-left>
+          <GithubProfileImage username="ibhayb" />
         </div>
+
+        <!-- Text -->
+        <div
+          class="w-full max-w-6xl mx-auto px-4 md:px-6 py-2 lg:mb-20"
+          v-motion-slide-visible-right
+        >
+          <div class="text-center md:text-left font-extrabold text-3xl md:text-4xl">
+            <div class="">Hello World 👋🏽🌎</div>
+            <div
+              class="[text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200"
+            >
+              I'm Ibrahim Hayber, a passionate
+              <span
+                class="text-indigo-500 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden"
+              >
+                <ul class="block animate-text-slide-3 text-left leading-tight [&_li]:block">
+                  <li>Developer</li>
+                  <li>Student</li>
+                  <li>Learner</li>
+                  <li aria-hidden="true">Developer</li>
+                </ul>
+              </span>
+            </div>
+            with an insatiable love for programming and lifelong learning.
+          </div>
+        </div>
+        <!-- Show Techstack button -->
+        <Button ahref="#techstack" button-text="My Techstack 👀" v-motion-slide-visible-bottom />
       </div>
-      <!-- Show Techstack button -->
-      <Button ahref="#techstack" button-text="My Techstack 👀" v-motion-slide-visible-bottom />
+    </div>
+
+    <!-- Techstack  -->
+    <div class="bg-black border-t border-gray-600" id="techstack">
+      <Techstack />
+    </div>
+
+    <!-- Projects -->
+    <div class="bg-black border-t border-gray-600" id="projects">
+      <Projects />
     </div>
   </div>
-
-  <!-- Techstack  -->
-  <div class="bg-black border-t border-gray-600" id="techstack">
-    <Techstack />
-  </div>
-
-  <!-- Projects -->
-  <div class="bg-black border-t border-gray-600" id="projects">
-    <Projects />
-  </div>
-
   <footer
     class="bottom-0 left-0 z-20 w-full p-4 bg-black border-t border-gray-600 shadow md:flex md:items-center md:justify-between md:p-6"
   >
